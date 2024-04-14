@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini_Game</title>
+</head>
+<body id="body">
+ <div id="game">
+   
+    <div id="paredediv"><div id="colisao"></div>
+    <div id="colisao1"></div>
+    <div id="colisao2"></div>
+    <div id="colisao3"></div></div>
+    
+    <button id="bus"></button>
+<img id="papel" src="img/papel.png" alt="">
+    <img id="bag" src="img/bag.png" alt="">
+    <img id="pc" src="img/pc.png" alt="">
+    <div id="parede"></div>
+    <img id="chave"src="img/chave.png" alt="">
+    <img  id="roupa" src="img/ded-removebg-preview.png" alt="">
+    
+    <div id="personagem">
+
+        <img src="img/pngegg2.png" id="people">
+        
+    </div>
+<div id="posicionamento"></div>
+    <div id="divbau">
+        <img src="img/Baú_fechado-removebg-preview.png" id="bau">
+    </div>
+    <div id="itens">
+       
+    </div>
+ </div>
+ 
+<div id="inventario">
+    <img id="inventarioimg" src="img/Inventario.png" alt=""> 
+</div>
+<div id="comandos "> 
+<input id="in" type="text" value="">
+ <button id="bu"  value="enviar comando "></button> 
+ </div>
+
+
+   
+
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</body>
+
+
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAjuuPVlm44Sn_0EOxJIdgXtO18pRnRQNg",
+    authDomain: "jogo-learning.firebaseapp.com",
+    projectId: "jogo-learning",
+    storageBucket: "jogo-learning.appspot.com",
+    messagingSenderId: "179079576613",
+    appId: "1:179079576613:web:9a3138a08f1a50b2bb93cc",
+    measurementId: "G-Y3FN40KCD2"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+</html>
